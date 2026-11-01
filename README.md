@@ -1,6 +1,8 @@
 # Trabajo-Practico-N2
 
 ## Nombre y descripción breve del proyecto
+Mundo Livie  
+Simula un sitio web de una revista de chismes que adicionalmente investiga sobre los artistas de los que hablan.
 
 ## Nombres de los integrantes
 Maitena Achigar  
@@ -11,6 +13,7 @@ María Luz Gomez
 Olivia Rodrigo  
 
 ## Enlace al sitio publicado
+https://m4itena.github.io/Trabajo-Practico-N2/
 
 ## Tecnologías utilizadas
 HTML  
