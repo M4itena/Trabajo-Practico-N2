@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
     <link href="css/estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,19 +24,37 @@
         <!--HEADER Y NAV-->
 
         <header>
-            <nav>
                 <h1>Mundo Livie</h1>
                 <p>¡Contáctanos para más información!</p>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="polemicas.html">Noticias y polémicas</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="estetica.html">Estilo</a></li>
-                    <li><a href="publico.html">Imagen pública</a></li>
-                    <li><a href="multimedia.html">Colaboraciones</a></li>
-                    <li><a href="discografia.html">Discografía</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="creditos.html">Créditos</a></li>
+                <nav>
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="polemicas.html">Noticias y polémicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estetica.html">Estilo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prensa.html">Imagen pública</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyectos.html">Colaboraciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discografia.html">Discografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="creditos.html">Créditos</a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -66,7 +86,7 @@
                         <fieldset>
                             <legend>Tus datos</legend>
                             <label for="nombre">Nombre (opcional)</label>
-                            <input type="text" id="nombre" name="nombre">
+                            <input type="text" id="nombre" name="nombre" placehoer="escribe tu nombre">
 
                             <label for="email">Correo electrónico</label>
                             <input type="email" id="email" name="email" placeholder="tuNombre@ejemplo.com" required>
@@ -79,10 +99,13 @@
                             <input type="checkbox" id="lanzamientos" name="lanzamientos" value="lanzamientos">
                             <label for="lanzamientos">Nuevos lanzamientos</label>
                         </fieldset>
-                        <div>
+                        <fieldset>
+                            <legend>Consentimiento</legend>
+                            <p>Al enviar este formulario, acepto recibir novedades y publicaciones de Mundo Livie a mi
+                                correo electrónico. Entiendo que puedo darme de baja en cualquier momento.</p>
                             <input type="checkbox" id="consentimiento" name="consentimiento" value="acepto" required>
                             <label for="consentimiento">Acepto recibir novedades por correo electrónico</label>
-                        </div>
+                        </fieldset>
                         <button type="submit">Suscribirme</button>
                         <button type="reset">Borrar</button>
                     </form>
@@ -99,9 +122,9 @@
 
                 <p>Seguinos en nuestras redes!</p>
                 <ul>
-                    <li><a href="https://www.twitter.com/mundoLivie" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/mundoLivie" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.youtube.com/mundoLivie" target="_blank">YouTube</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
                 </ul>
                 <p>Aclaración: La información presentada en este sitio es solo para fines educativos. Todos los
                     derechos de imagen y contenido pertenecen a sus respectivos autores. Cualquier simulitud con la

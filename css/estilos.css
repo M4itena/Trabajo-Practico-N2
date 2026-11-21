@@ -8,4 +8,19 @@ body{
 }
 #contenedor{
     background-color: aliceblue;
+    color:blueviolet
+}
+
+.nav-pills .nav-link {
+  color: violet;
+}
+
+.nav-pills .nav-link:hover {
+  color: darkmagenta;
+  
+}
+
+.nav-pills .nav-link.active {
+  color: deeppink;
+  background-color: #2e0433;
 }
