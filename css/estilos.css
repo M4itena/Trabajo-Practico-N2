@@ -109,3 +109,62 @@ body{
 .listaSecciones.seccionesAbiertas {
   display: block;
 }
+
+/* CONTROL DE LAYOUT PARA OTROS DISPOSITIVOS */
+
+/* NAVEGADORES */
+
+header .navbar,
+#navegacionSuperior {
+  background-color: #F6F1E9;
+  background-image: none;
+  border: 0;
+}
+
+.navbar-toggler {
+  border: 0.12rem solid #491E70;
+  border-radius: 0.5rem;
+  background-color: #491E70;
+  color: #F6F1E9;
+  padding: 0.4rem 0.75rem;
+}
+
+@media (max-width: 62rem) {
+  #distribucionPagina.panelAbierto #panelLateral {
+    width: 32%;
+  }
+
+  #distribucionPagina.panelAbierto main {
+    width: 68%;
+    padding-left: 1rem;
+  }
+
+  #navegacionSuperior {
+    flex-direction: column;
+  }
+
+  #navegacionSuperior .nav-item,
+  #navegacionSuperior .nav-link {
+    width: 100%;
+  }
+}
+
+@media (max-width: 48rem) {
+  #distribucionPagina.panelAbierto {
+    flex-direction: column;
+  }
+
+  #distribucionPagina.panelAbierto #panelLateral,
+  #distribucionPagina.panelAbierto main {
+    width: 100%;
+  }
+
+  #distribucionPagina.panelAbierto #panelLateral {
+    border-right: 0;
+    border-bottom: 0.06rem solid #8F69D6;
+  }
+
+  #distribucionPagina.panelAbierto main {
+    padding-left: 0;
+  }
+}
