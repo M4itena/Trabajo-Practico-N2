@@ -2,25 +2,110 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0;
-    padding: 0;
+  display: flex;
     font-family: "Courier Prime", monospace;
 }
 #contenedor{
-    background-color: aliceblue;
-    color:blueviolet
+    background-color: #F6F1E9;
+    color:blueviolet;
 }
 
+/* NAVEGADOR */
+
 .nav-pills .nav-link {
-  color: violet;
+  color: #8F69D6;
 }
 
 .nav-pills .nav-link:hover {
-  color: darkmagenta;
+  color: #db10d1;
   
 }
 
 .nav-pills .nav-link.active {
-  color: deeppink;
-  background-color: #2e0433;
+  color: #F6F1E9;
+  background-color: #491E70;
+}
+
+/* PANEL LATERAL */
+
+#botonLateral,
+#panelLateral .botonSecciones {
+  padding: 0.25rem 0.5rem;
+  border: 0.25rem solid #491E70;
+  border-radius: 1rem;
+  background-color: #491E70;
+  color: #F6F1E9;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+#botonLateral:hover,
+#panelLateral .botonSecciones:hover {
+  background-color: #8F69D6;
+}
+
+#botonLateral {
+  margin-top: 1rem;
+}
+
+#distribucionPagina {
+  display: flex;
+}
+
+/* LÍNEA */
+
+#panelLateral {
+  display: none;
+  box-sizing: border-box;
+  width: 25%;
+  padding: 1rem;
+  border-right: 0.06rem solid #8F69D6;
+  background-color: #F6F1E9;
+  color: #491E70;
+}
+
+/* LAYOUT DEL PANEL */
+
+#distribucionPagina.panelAbierto #panelLateral {
+  display: block;
+}
+
+#distribucionPagina main {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#distribucionPagina.panelAbierto main {
+  width: 75%;
+  padding-left: 1.5rem;
+}
+
+#panelLateral nav ul {
+  padding-left: 1.25rem;
+}
+
+#panelLateral a {
+  color: #8F69D6;
+}
+
+#panelLateral a:hover {
+  color: #db10d1;
+}
+
+.tituloPagina {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grupoPagina + .grupoPagina {
+  margin-top: 0.75rem;
+}
+
+.listaSecciones {
+  display: none;
+}
+
+.listaSecciones.seccionesAbiertas {
+  display: block;
 }
