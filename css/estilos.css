@@ -1,16 +1,125 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
+
+body {
   display: flex;
-    font-family: "Courier Prime", monospace;
+  font-family: "Courier Prime", monospace;
 }
-#contenedor{
-    background-color: #F6F1E9;
-    color:blueviolet;
+
+#contenedor {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F6F1E9;
+  color: blueviolet;
+}
+
+/* ENCABEZADO Y PIE DE PÁGINA */
+
+.encabezado,
+.piePagina {
+  padding: 1rem;
+  text-align: center;
+  background-color: #f781f1;
+  color: #491E70;
+  border-radius: 3rem;
+}
+
+.encabezado {
+  border-left: 0.6rem solid #701e5b;
+}
+
+.encabezado h1 {
+  font-size: 3rem;
+}
+
+.piePagina {
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.piePagina address {
+  text-align: left;
+  flex-direction: column;
+}
+
+.piePagina {
+  border-left: 0.6rem solid #701e5b;
+}
+
+.piePagina address a,
+.piePagina .redesSociales a {
+  color: #491E70;
+  text-decoration: none;
+}
+
+.piePagina address a:hover,
+.piePagina .redesSociales a:hover {
+  color: #F6F1E9;
+  text-decoration: underline;
+}
+
+.piePagina address a:active,
+.piePagina .redesSociales a:active {
+  color: #8F69D6;
+  text-decoration: underline;
+}
+
+.piePagina .redesSociales {
+  text-align: right;
+  flex-direction: column;
+}
+
+.piePagina .redesSociales ul {
+  list-style-type: none;
+}
+
+.piePagina .aclaracion {
+  width: 100%;
+}
+
+/* TEXTO */
+
+.contenidoPrincipal {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: #491E70 0.8rem solid;
+  border-radius: 2rem;
+}
+
+.contenidoPrincipal section {
+  margin-top: 1rem;
+}
+
+/* BOTONES MAIN */
+
+main button {
+  padding: 0.5rem;
+  border: 0.2rem solid #701e5b;
+  border-radius: 1rem;
+  background-color: #f3a0ef;
+  color: #12051f;
+  font-size: 0.8rem;
+}
+
+main button a {
+  text-decoration: none;
+  color: #12051f;
+}
+
+main button:hover {
+  background-color: #8F69D6;
+  border-color: #491E70;
+  color: #F6F1E9;
 }
 
 /* NAVEGADOR */
+
+.navbar {
+  padding: 0.5rem;
+  background-color: #F6F1E9;
+  border-radius: 2rem;
+}
 
 .nav-pills .nav-link {
   color: #8F69D6;
@@ -18,7 +127,7 @@ body{
 
 .nav-pills .nav-link:hover {
   color: #db10d1;
-  
+
 }
 
 .nav-pills .nav-link.active {
@@ -50,6 +159,7 @@ body{
 
 #distribucionPagina {
   display: flex;
+  flex-direction: column;
 }
 
 /* LÍNEA */
@@ -57,9 +167,9 @@ body{
 #panelLateral {
   display: none;
   box-sizing: border-box;
-  width: 25%;
+  width: 100%;
   padding: 1rem;
-  border-right: 0.06rem solid #8F69D6;
+  border-bottom: 0.06rem solid #8F69D6;
   background-color: #F6F1E9;
   color: #491E70;
 }
@@ -76,8 +186,8 @@ body{
 }
 
 #distribucionPagina.panelAbierto main {
-  width: 75%;
-  padding-left: 1.5rem;
+  width: 100%;
+  padding-left: 0;
 }
 
 #panelLateral nav ul {
@@ -98,7 +208,7 @@ body{
   justify-content: space-between;
 }
 
-.grupoPagina + .grupoPagina {
+.grupoPagina+.grupoPagina {
   margin-top: 0.75rem;
 }
 
@@ -118,18 +228,19 @@ header .navbar,
 #navegacionSuperior {
   background-color: #F6F1E9;
   background-image: none;
-  border: 0;
+  flex-direction: column;
 }
 
-.navbar-toggler {
-  border: 0.12rem solid #491E70;
-  border-radius: 0.5rem;
-  background-color: #491E70;
-  color: #F6F1E9;
-  padding: 0.4rem 0.75rem;
+#navegacionSuperior .nav-item,
+#navegacionSuperior .nav-link {
+  width: 100%;
 }
 
-@media (max-width: 62rem) {
+@media (min-width: 48rem) {
+  #distribucionPagina.panelAbierto {
+    flex-direction: row;
+  }
+
   #distribucionPagina.panelAbierto #panelLateral {
     width: 32%;
   }
@@ -139,32 +250,28 @@ header .navbar,
     padding-left: 1rem;
   }
 
+  #distribucionPagina.panelAbierto #panelLateral {
+    border-right: 0.06rem solid #8F69D6;
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: 62rem) {
   #navegacionSuperior {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   #navegacionSuperior .nav-item,
   #navegacionSuperior .nav-link {
-    width: 100%;
-  }
-}
-
-@media (max-width: 48rem) {
-  #distribucionPagina.panelAbierto {
-    flex-direction: column;
-  }
-
-  #distribucionPagina.panelAbierto #panelLateral,
-  #distribucionPagina.panelAbierto main {
-    width: 100%;
+    width: auto;
   }
 
   #distribucionPagina.panelAbierto #panelLateral {
-    border-right: 0;
-    border-bottom: 0.06rem solid #8F69D6;
+    width: 25%;
   }
 
   #distribucionPagina.panelAbierto main {
-    padding-left: 0;
+    width: 75%;
+    padding-left: 1.5rem;
   }
 }

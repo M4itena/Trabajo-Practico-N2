@@ -23,17 +23,16 @@
 
         <!--HEADER Y NAV-->
 
-        <header>
+        <header class="encabezado">
             <h1>Mundo Livie</h1>
             <p>Toda la información sobre tu artista favorito en un solo lugar!</p>
-            <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacionSuperior">☰ Menú</button>
-                <ul class="nav nav-pills nav-fill w-100 collapse navbar-collapse" id="navegacionSuperior">
+            <nav class="navbar">
+                <ul class="nav nav-pills nav-fill w-100" id="navegacionSuperior">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="polemicas.html">Noticias y polémicas</a>
+                        <a class="nav-link" href="noticias.html">Noticias y polémicas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="historia.html">Historia</a>
@@ -60,7 +59,9 @@
             </nav>
         </header>
 
-        <button id="botonLateral" type="button">Mostrar navegación</button>
+        <!-- NAVEGADOR LATERAL -->
+
+        <button id="botonLateral" type="button">☰ Menú</button>
         <div id="distribucionPagina">
             <aside id="panelLateral">
                 <nav>
@@ -77,14 +78,14 @@
                     </div>
                     <div class="grupoPagina">
                         <div class="tituloPagina">
-                            <a href="polemicas.html">Noticias y polémicas</a>
+                            <a href="noticias.html">Noticias y polémicas</a>
                             <button class="botonSecciones" type="button">Mostrar secciones</button>
                         </div>
                         <ul class="listaSecciones">
-                            <li><a href="polemicas.html#ultimoMomento">¡Último momento!</a></li>
-                            <li><a href="polemicas.html#noticiaUno">Noticia 1</a></li>
-                            <li><a href="polemicas.html#noticiaDos">Noticia 2</a></li>
-                            <li><a href="polemicas.html#noticiaTres">Noticia 3</a></li>
+                            <li><a href="noticias.html#ultimoMomento">¡Último momento!</a></li>
+                            <li><a href="noticias.html#noticiaUno">Noticia 1</a></li>
+                            <li><a href="noticias.html#noticiaDos">Noticia 2</a></li>
+                            <li><a href="noticias.html#noticiaTres">Noticia 3</a></li>
                         </ul>
                     </div>
                     <div class="grupoPagina">
@@ -117,7 +118,8 @@
                             <button class="botonSecciones" type="button">Mostrar secciones</button>
                         </div>
                         <ul class="listaSecciones">
-                            <li><a href="prensa.html#representacionGeneracion">La representación de una generación</a></li>
+                            <li><a href="prensa.html#representacionGeneracion">La representación de una generación</a>
+                            </li>
                             <li><a href="prensa.html#prensaTituloUno">Titulo 1</a></li>
                             <li><a href="prensa.html#prensaTituloDos">Titulo 2</a></li>
                             <li><a href="prensa.html#prensaTituloTres">Titulo 3</a></li>
@@ -153,30 +155,24 @@
                             <button class="botonSecciones" type="button">Mostrar secciones</button>
                         </div>
                         <ul class="listaSecciones">
-                            <li><a href="contacto.html#contactoIntroduccion">¿Querés estar al día con nuestras publicaciones?</a></li>
+                            <li><a href="contacto.html#contactoIntroduccion">¿Querés estar al día con nuestras
+                                    publicaciones?</a></li>
                             <li><a href="contacto.html#ofertaMembresia">Qué ofrece nuestra membresía?</a></li>
-                            <li><a href="contacto.html#suscripcionNewsletter">¿Te interesa? Suscribite al newsletter</a></li>
+                            <li><a href="contacto.html#suscripcionNewsletter">¿Te interesa? Suscribite al newsletter</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="grupoPagina">
                         <div class="tituloPagina">
                             <a href="creditos.html">Créditos</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
                         </div>
-                        <ul class="listaSecciones">
-                            <li><a href="creditos.html#datosMateria">Datos de la materia</a></li>
-                            <li><a href="creditos.html#integrantesGrupo">Integrantes del grupo</a></li>
-                            <li><a href="creditos.html#integranteNahiara">Nahiara Aylen Sosto</a></li>
-                            <li><a href="creditos.html#integranteMaria">Maria Luz Gomez</a></li>
-                            <li><a href="creditos.html#integranteMaitena">Maitena Achigar</a></li>
-                        </ul>
                     </div>
                 </nav>
             </aside>
 
         <!--MAIN-->
 
-        <main>
+        <main class="contenidoPrincipal">
             <h2 id="representacionGeneracion">La representación de una generación</h2>
             <p>El impacto de Olivia Rodrigo en la cultura pop y en la juventud</p>
 
@@ -199,23 +195,27 @@
 
             <!--FOOTER-->
 
-            <footer>
+            <footer class="piePagina">
                 <address>
                     <p>Mail: <a href="mailto:#">mundoLivie@gmail.com</a></p>
                     <p>Tel: <a href="tel:#">+54 11 1234-5678</a></p>
                 </address>
 
-                <p>Seguinos en nuestras redes!</p>
-                <ul>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">YouTube</a></li>
-                </ul>
-                <p>Aclaración: La información presentada en este sitio es solo para fines educativos. Todos los
-                    derechos de imagen y contenido pertenecen a sus respectivos autores. Cualquier simulitud con la
-                    realidad es pura coincidencia.
-                    Los enlaces proporcionados son solo para los fines ya mencionados y no
-                    representan ninguna entidad real u oficial.</p>
+                <div class="redesSociales">
+                    <p class="miniTiulo">Seguinos en nuestras redes!</p>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="aclaracion">
+                    <p>Aclaración: La información presentada en este sitio es solo para fines educativos. Todos los
+                        derechos de imagen y contenido pertenecen a sus respectivos autores. Cualquier simulitud con la
+                        realidad es pura coincidencia.
+                        Los enlaces proporcionados son solo para los fines ya mencionados y no
+                        representan ninguna entidad real u oficial.</p>
+                </div>
             </footer>
         </main>
         </div>

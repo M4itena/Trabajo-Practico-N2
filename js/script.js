@@ -6,7 +6,7 @@ const botonLateral = document.querySelector("#botonLateral");
 
 botonLateral.addEventListener("click", () => {
     const panelAbierto = distribucionPagina.classList.toggle("panelAbierto");
-    botonLateral.textContent = panelAbierto ? "Ocultar navegación" : "Mostrar navegación";
+    botonLateral.textContent = panelAbierto ? "✕ Cerrar menú" : "☰ Menú";
 });
 
 const gruposPagina = document.querySelectorAll(".grupoPagina");
