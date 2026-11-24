@@ -22,11 +22,12 @@ body {
   text-align: center;
   background-color: #f781f1;
   color: #491E70;
-  border-radius: 3rem;
 }
 
 .encabezado {
-  border-left: 0.6rem solid #701e5b;
+  display: flex;
+  align-items: center;
+  justify-content:center;
 }
 
 .encabezado h1 {
@@ -39,12 +40,7 @@ body {
 }
 
 .piePagina address {
-  text-align: left;
-  flex-direction: column;
-}
-
-.piePagina {
-  border-left: 0.6rem solid #701e5b;
+  text-align: center;
 }
 
 .piePagina address a,
@@ -66,8 +62,11 @@ body {
 }
 
 .piePagina .redesSociales {
-  text-align: right;
-  flex-direction: column;
+  gap: 15px;
+  height: 550%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .piePagina .redesSociales ul {

@@ -1,255 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--HEAD-->
+    <!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+        <link href="css/estilos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <!--BODY-->
+    <body>
+        <div id="contenedor">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+            <!--HEADER Y NAV-->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <link href="css/estilos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-</head>
+            <header class="encabezado">
+                <!--Botonde menu hamburguesa-->
+                <!-- <i class="bi bi-list"></i> -->
+                <button id="botonLateral" type="button">☰</button>
+                <div id="distribucionPagina">
+                    <aside id="panelLateral">
+                        <nav>
+                            <div class="grupoPagina">
+                                <div class="tituloPagina">
+                                    <a href="index.html">Inicio</a>
+                                    <button class="botonSecciones" type="button">Mostrar secciones</button>
+                                </div>
+                                <ul class="listaSecciones">
+                                    <li><a href="index.html#quienesSomos">¿Quiénes Somos?</a></li>
+                                    <li><a href="index.html#membresia">Membresía</a></li>
+                                    <li><a href="index.html#oliviaRodrigo">Olivia Rodrigo</a></li>
+                                </ul>
+                            </div>
+                            <div class="grupoPagina">
+                                <div class="tituloPagina">
+                                    <a href="noticias.html">Noticias y polémicas</a>
+                                    <button class="botonSecciones" type="button">Mostrar secciones</button>
+                                </div>
+                                <ul class="listaSecciones">
+                                    <li><a href="noticias.html#ultimoMomento">¡Último momento!</a></li>
+                                    <li><a href="noticias.html#noticiaUno">Noticia 1</a></li>
+                                    <li><a href="noticias.html#noticiaDos">Noticia 2</a></li>
+                                    <li><a href="noticias.html#noticiaTres">Noticia 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="grupoPagina">
+                                <div class="tituloPagina">
+                                    <a href="historia.html">Historia</a>
+                                    <button class="botonSecciones" type="button">Mostrar secciones</button>
+                                </div>
+                                <ul class="listaSecciones">
+                                    <li><a href="historia.html#quienEsOlivia">¿Quién es Olivia Rodrigo?</a></li>
+                                    <li><a href="historia.html#historiaTituloUno">Titulo 1</a></li>
+                                    <li><a href="historia.html#historiaTituloDos">Titulo 2</a></li>
+                                    <li><a href="historia.html#historiaTituloTres">Titulo 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="grupoPagina">
+                                <div class="tituloPagina">
+                                    <a href="estetica.html">Estilo</a>
+                                    <button class="botonSecciones" type="button">Mostrar secciones</button>
+                                </div>
+                                <ul class="listaSecciones">
+                                    <li><a href="estetica.html#estiloIconico">Su estilo icónico</a></li>
+                                    <li><a href="estetica.html#estiloTituloUno">Titulo 1</a></li>
+                                    <li><a href="estetica.html#estiloTituloDos">Titulo 2</a></li>
+                                    <li><a href="estetica.html#estiloTituloTres">Titulo 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="grupoPagina">
+                                <div class="tituloPagina">
+                                    <a href="prensa.html">Imagen pública</a>
+                                    <button class="botonSecciones" type="button">Mostrar secciones</button>
+                                </div>
+                                <ul class="listaSecciones">
+                                    <li><a href="prensa.html#representacionGeneracion">La representación de una generación</a>
+                                    </li>
+                                    <li><a href="prensa.html#prensaTituloUno">Titulo 1</a></li>
+                                    <li><a href="prensa.html#prensaTituloDos">Titulo 2</a></li>
+                                    <li><a href="prensa.html#prensaTituloTres">Titulo 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="grupoPagina">
+                                <div class="tituloPagina">
+                                    <a href="proyectos.html">Colaboraciones</a>
+                                    <button class="botonSecciones" type="button">Mostrar secciones</button>
+                                </div>
+                                <ul class="listaSecciones">
+                                    <li><a href="proyectos.html#dondeDejoHuella">Donde dejó su huella</a></li>
+                                    <li><a href="proyectos.html#proyectoTituloUno">Titulo 1</a></li>
+                                    <li><a href="proyectos.html#proyectoTituloDos">Titulo 2</a></li>
+                                    <li><a href="proyectos.html#proyectoTituloTres">Titulo 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="grupoPagina">
+                                <div class="tituloPagina">
+                                    <a href="discografia.html">Discografía</a>
+                                    <button class="botonSecciones" type="button">Mostrar secciones</button>
+                                </div>
+                                <ul class="listaSecciones">
+                                    <li><a href="discografia.html#discografia">Discografía</a></li>
+                                    <li><a href="discografia.html#discografiaTituloUno">Titulo 1</a></li>
+                                    <li><a href="discografia.html#discografiaTituloDos">Titulo 2</a></li>
+                                    <li><a href="discografia.html#discografiaTituloTres">Titulo 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="grupoPagina">
+                                <div class="tituloPagina">
+                                    <a href="contacto.html">Contacto</a>
+                                    <button class="botonSecciones" type="button">Mostrar secciones</button>
+                                </div>
+                                <ul class="listaSecciones">
+                                    <li><a href="contacto.html#contactoIntroduccion">¿Querés estar al día con nuestras
+                                            publicaciones?</a></li>
+                                    <li><a href="contacto.html#ofertaMembresia">Qué ofrece nuestra membresía?</a></li>
+                                    <li><a href="contacto.html#suscripcionNewsletter">¿Te interesa? Suscribite al newsletter</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="grupoPagina">
+                                <div class="tituloPagina">
+                                    <a href="creditos.html">Créditos</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </aside>
+                <h1>Mundo Livie</h1>
+                <i class="bi bi-person"></i>
+            </header>
 
-<!--BODY-->
+            <!--MAIN-->
 
-<body>
-    <div id="contenedor">
+                <main class="contenidoPrincipal">
+                    <!--SECCION BIENVENIDA-->
+                    <section>
+                        <h2 id="quienesSomos">¿Quiénes Somos?</h2>
+                        <p>¡Bienvenidx! Mundo Livie es una página fan dedicada a compartir y recopilar información sobre la artista, su trayectoria musical, sus comienzos, sus logros y los momentos que marcaron su carrera.</p>
+                        <p>Nuestro objetivo no es solamente mantenerte al tanto de sus últimos lanzamientos y novedades, sino también recorrer su historia, conocer más sobre quién es, cómo comenzó su camino en la industria y cómo llegó a convertirse en una de las artistas más destacadas de su generación.</p>
+                        <p>A través de nuestro trabajo de investigación, reunimos información, curiosidades y contenido de interés para que puedas descubrir y conocer cada vez más sobre Olivia y su mundo artístico.</p>
+                        <section id="membresia">
+                            <p><strong>¿Querés estar al día con nuestras publicaciones?</strong>¡Suscribite a nuestra <a href="contacto.html">membresía</a> y recibí notificaciones cada vez que actualicemos la página! Así no te vas a perder ninguna novedad de Mundo Livie.</p>
+                        <!-- <button><a href="contacto.html">Ver más</a></button> -->
+                        </section>
+                    </section>
 
-        <!--HEADER Y NAV-->
+                    <!--SECCION INFO DE OLIVIA-->
 
-        <header class="encabezado">
-            <h1>Mundo Livie</h1>
-            <p>Bienvenido a Mundo Livie! Toda la información sobre tu artista favorito en un solo lugar!</p>
-            
-            <nav class="navbar">
-                <ul class="nav nav-pills nav-fill w-100" id="navegacionSuperior">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="noticias.html">Noticias y polémicas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="historia.html">Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="estetica.html">Estilo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="prensa.html">Imagen pública</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="proyectos.html">Colaboraciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="discografia.html">Discografía</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="creditos.html">Créditos</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                    <section>
+                        <article>
+                            <h1 id="oliviaRodrigo">Olivia Rodrigo, la voz de un generación</h1>
+                            <p><strong>Olivia Isabel Rodrigo</strong> es una cantante, compositora y actriz estadounidense, nacida el 20 de febrero de 2003 en Murrieta, California. Desde muy pequeña demostró interés por la música y la interpretación, desarrollando habilidades en el canto, el piano y la guitarra. Con el paso de los años, logró combinar ambas pasiones y construir una carrera artística que la llevó a convertirse en una de las figuras más reconocidas del pop contemporáneo.</p>
+                            <p>Sus primeros pasos en el mundo del entretenimiento fueron como actriz infantil, participando en anuncios publicitarios y en la película <em>An American Girl: Grace Stirs Up Success</em> (2015). Sin embargo, alcanzó mayor reconocimiento gracias a sus papeles protagónicos en las producciones de Disney <em>Bizaardvark</em> (2016-2019), donde interpretó a Paige Olvera, y <em>High School Musical: The Musical: The Series</em> (2019-2022), en la que dio vida a Nini Salazar-Roberts.</p>
+                            <p>Durante su participación en esta última serie, Olivia también comenzó a mostrar su talento como compositora. Uno de sus primeros éxitos musicales fue «All I Want», una canción original que escribió para la producción y que consiguió una gran repercusión entre el público. Este acercamiento a la composición fortaleció su interés por desarrollar una carrera independiente dentro de la industria musical.</p>
+                            <!-- <img src="img/Olivia_at_the_Unraveled_Tour.jpg" alt="#"> -->
+                            <p>En 2020 firmó un contrato con Geffen Records y comenzó una nueva etapa enfocada principalmente en la música. En enero de 2021 lanzó «drivers license», su primer sencillo como solista, que rápidamente se convirtió en un fenómeno internacional. La canción alcanzó el primer puesto del Billboard Hot 100 y obtuvo millones de reproducciones en distintas plataformas digitales, convirtiéndose en uno de los grandes éxitos musicales de ese año.</p>
+                            <p>Este lanzamiento dio paso a su primer álbum de estudio, <em>SOUR</em> (2021), un trabajo que explora emociones relacionadas con el desamor, la inseguridad, el crecimiento personal y las experiencias propias de la juventud. El disco combina elementos del pop, el pop punk, el rock alternativo y el indie pop. Además de «drivers license», incluyó canciones como «deja vu», «good 4 u», «traitor» y «favorite crime». El álbum debutó en el primer puesto de la lista estadounidense Billboard 200 y obtuvo un enorme reconocimiento tanto del público como de la crítica especializada.</p>
+                            <p>En 2022 protagonizó el documental <em>Olivia Rodrigo: driving home 2 u</em> (a SOUR film), una producción que recorre el proceso creativo detrás de su primer álbum y muestra distintas interpretaciones de sus canciones. Ese mismo año recibió tres premios Grammy, incluyendo Mejor Artista Nuevo, Mejor Álbum Vocal Pop y Mejor Interpretación Pop Solista por «drivers license».</p>
+                            <p>En septiembre de 2023 presentó su segundo álbum de estudio, <em>GUTS</em>, con el que profundizó su identidad musical y exploró nuevas temáticas. A diferencia de su primer trabajo, este disco aborda cuestiones como la presión social, las inseguridades, las expectativas personales, el enojo y las dificultades de crecer. Con canciones como «vampire», «bad idea right?», «get him back!» y «making the bed», Olivia mostró una faceta más experimental y enérgica, incorporando influencias del rock y el pop punk. El álbum debutó en el primer puesto del Billboard 200 y su sencillo principal, «vampire», también alcanzó el número uno del Billboard Hot 100.</p>
+                            <p>En 2024 inició el <em>GUTS World Tour</em>, su segunda gira internacional, que recorrió más de 20 países y contó con numerosas presentaciones con entradas agotadas. Además, durante esta etapa impulsó <strong>Fund 4 Good</strong>, una iniciativa destinada a apoyar organizaciones que trabajan por la igualdad de oportunidades, la educación de niñas y mujeres, los derechos reproductivos y la prevención de la violencia de género.</p>
+                            <p>Su trayectoria continuó creciendo en 2026 con el lanzamiento de su tercer álbum de estudio, <em>you seem pretty sad for a girl so in love</em>, publicado el 12 de junio a través de Geffen Records. Este nuevo trabajo presenta una perspectiva diferente sobre el amor y las relaciones, explorando los sentimientos de ilusión, vulnerabilidad, nostalgia y melancolía. Su primer sencillo, «drop dead», alcanzó el primer puesto del Billboard Hot 100, convirtiendo a Olivia en la primera artista en conseguir que los sencillos principales de sus tres primeros álbumes debutaran directamente en esa posición.</p>
+                            <p>A lo largo de su carrera, Olivia Rodrigo ha construido una identidad artística caracterizada por sus letras personales, su expresividad y su capacidad para transformar experiencias y emociones cotidianas en canciones con las que muchas personas pueden identificarse. Su música combina distintos géneros y refleja una evolución constante, tanto en su composición como en su interpretación.</p>
+                            <p>Entre sus reconocimientos se encuentran tres premios Grammy, siete Billboard Music Awards y otros numerosos galardones. También fue nombrada Mujer del Año por Billboard en 2022 y recibió importantes distinciones por su trabajo como compositora. Actualmente, continúa consolidándose como una de las artistas más influyentes de su generación.</p>
+                            <button><a href="discografia.html">Ver más</a></button>
+                        </article>
+                    </section>
 
-        <!--MAIN-->
+                    <!--FOOTER-->
 
-        <!-- NAVEGADOR LATERAL -->
+                    <footer class="piePagina">
 
-        <button id="botonLateral" type="button">☰ Menú</button>
-        <div id="distribucionPagina">
-            <aside id="panelLateral">
-                <nav>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="index.html">Inicio</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
+                        <div class="redesSociales">
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-spotify"></i>
                         </div>
-                        <ul class="listaSecciones">
-                            <li><a href="index.html#quienesSomos">¿Quiénes Somos?</a></li>
-                            <li><a href="index.html#membresia">Membresía</a></li>
-                            <li><a href="index.html#oliviaRodrigo">Olivia Rodrigo</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="noticias.html">Noticias y polémicas</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="noticias.html#ultimoMomento">¡Último momento!</a></li>
-                            <li><a href="noticias.html#noticiaUno">Noticia 1</a></li>
-                            <li><a href="noticias.html#noticiaDos">Noticia 2</a></li>
-                            <li><a href="noticias.html#noticiaTres">Noticia 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="historia.html">Historia</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="historia.html#quienEsOlivia">¿Quién es Olivia Rodrigo?</a></li>
-                            <li><a href="historia.html#historiaTituloUno">Titulo 1</a></li>
-                            <li><a href="historia.html#historiaTituloDos">Titulo 2</a></li>
-                            <li><a href="historia.html#historiaTituloTres">Titulo 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="estetica.html">Estilo</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="estetica.html#estiloIconico">Su estilo icónico</a></li>
-                            <li><a href="estetica.html#estiloTituloUno">Titulo 1</a></li>
-                            <li><a href="estetica.html#estiloTituloDos">Titulo 2</a></li>
-                            <li><a href="estetica.html#estiloTituloTres">Titulo 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="prensa.html">Imagen pública</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="prensa.html#representacionGeneracion">La representación de una generación</a>
-                            </li>
-                            <li><a href="prensa.html#prensaTituloUno">Titulo 1</a></li>
-                            <li><a href="prensa.html#prensaTituloDos">Titulo 2</a></li>
-                            <li><a href="prensa.html#prensaTituloTres">Titulo 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="proyectos.html">Colaboraciones</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="proyectos.html#dondeDejoHuella">Donde dejó su huella</a></li>
-                            <li><a href="proyectos.html#proyectoTituloUno">Titulo 1</a></li>
-                            <li><a href="proyectos.html#proyectoTituloDos">Titulo 2</a></li>
-                            <li><a href="proyectos.html#proyectoTituloTres">Titulo 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="discografia.html">Discografía</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="discografia.html#discografia">Discografía</a></li>
-                            <li><a href="discografia.html#discografiaTituloUno">Titulo 1</a></li>
-                            <li><a href="discografia.html#discografiaTituloDos">Titulo 2</a></li>
-                            <li><a href="discografia.html#discografiaTituloTres">Titulo 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="contacto.html">Contacto</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="contacto.html#contactoIntroduccion">¿Querés estar al día con nuestras
-                                    publicaciones?</a></li>
-                            <li><a href="contacto.html#ofertaMembresia">Qué ofrece nuestra membresía?</a></li>
-                            <li><a href="contacto.html#suscripcionNewsletter">¿Te interesa? Suscribite al newsletter</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="creditos.html">Créditos</a>
-                        </div>
-                    </div>
-                </nav>
-            </aside>
-
-            <main class="contenidoPrincipal">
-                <h2 id="quienesSomos">¿Quiénes Somos?</h2>
-                <p>En Mundo Livie, no solo nos limitamos a hablar de lo más reciente de cada artista, sino de hacer un
-                    recopilado de su historia, quiénes son, sus carreras y cómo llegaron hasta donde están hoy. Gracias
-                    a nuestro equipo de investigación, traemos todo lo que hay que saber sobre músicos y artistas,
-                    solistas y grupos por igual.</p>
-
-                <section id="membresia">
-                    <p>Querés estar al día con nuestras publicaciones? ¡Suscribite a nuestra membresía y recibí una
-                        notificación en cada actualización!</p>
-
-                    <button><a href="contacto.html">Ver más</a></button>
-                </section>
-
-                <!--SECCION-->
-
-                <section>
-                    <article>
-                        <h1 id="oliviaRodrigo">Olivia Rodrigo, la voz de un generación</h1>
-                        <p>Olivia Isabel Rodrigo es una cantautora y actriz estadounidense. Rodrigo comenzó su carrera
-                            como actriz infantil, apareciendo en anuncios publicitarios y en la película lanzada
-                            directamente
-                            para video "An American Girl: Grace Stirs Up Success" (2015). Cobró notoriedad gracias a sus
-                            papeles protagonistas en la serie de Disney Channel "Bizaardvark" (2016 a 2019) y en la
-                            serie de Disney "High School Musical: The Musical: The Series" (2019 a 2022).</p>
-                    </article>
-                    <article>
-                        <p>Centró su atención en la música y firmó con Geffen Records en el año 2020. Su álbum de debut,
-                            "SOUR" (2021), encabezó la lista estadounidense Billboard 200 y otras nueve listas a nivel
-                            mundial. El álbum estuvo precedido por los sencillos «Drivers License» y «Good 4 U», ambos
-                            número uno en la lista estadounidense Billboard Hot 100. Asimismo, fue la protagonista del
-                            documental "Olivia Rodrigo: Driving Home 2 U" (2022). Sus dos siguientes álbumes de estudio,
-                            "GUTS" (2023) y "You Seem Pretty Sad for a Girl So in Love" (2026), dieron lugar a los
-                            sencillos Vampire y Drop Dead —ambos número uno en Estados Unidos—, lo que la convirtió en
-                            la primera
-                            artista en lograr que el sencillo principal de cada uno de sus tres primeros álbumes
-                            debutara directamente en el primer puesto de dicha lista.</p>
-                        <p>Entre los reconocimientos de Olivia Rodrigo se incluyen tres premios Grammy, cinco premios
-                            MTV Video Music y siete premios Billboard Music. Fue nombrada Artista del año por la revista
-                            Time en 2021, Mujer del año por Billboard en 2022 y Compositora de música pop del año por la
-                            ASCAP tanto en 2022 como en 2024.</p>
-                        <button><a href="discografia.html">Ver más</a></button>
-                    </article>
-                </section>
-
-                <!--FOOTER-->
-
-                <footer class="piePagina">
-                    <address>
-                        <p>Mail: <a href="mailto:#">mundoLivie@gmail.com</a></p>
-                        <p>Tel: <a href="tel:#">+54 11 1234-5678</a></p>
-                    </address>
-
-                    <div class="redesSociales">
-                    <p class="miniTiulo">Seguinos en nuestras redes!</p>
-                    <ul>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">YouTube</a></li>
-                    </ul>
-                    </div>
-                    <div class="aclaracion">
-                    <p>Aclaración: La información presentada en este sitio es solo para fines educativos. Todos los
-                        derechos de imagen y contenido pertenecen a sus respectivos autores. Cualquier simulitud con la
-                        realidad es pura coincidencia.
-                        Los enlaces proporcionados son solo para los fines ya mencionados y no
-                        representan ninguna entidad real u oficial.</p>
-                    </div>
-                </footer>
-            </main>
+                        <address>
+                            <p>Mail: <a href="mailto:mundoLivie@gmail.com">mundoLivie@gmail.com</a></p>
+                        </address>
+                        <!--
+                        <div class="aclaracion">
+                        <p>Aclaración: La información presentada en este sitio es solo para fines educativos. Todos los
+                            derechos de imagen y contenido pertenecen a sus respectivos autores. Cualquier simulitud con la
+                            realidad es pura coincidencia.
+                            Los enlaces proporcionados son solo para los fines ya mencionados y no
+                            representan ninguna entidad real u oficial.</p>
+                        </div> -->
+                    </footer>
+                </main>
+            </div>
         </div>
-    </div>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
-        crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-</body>
-
+        <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+            crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
