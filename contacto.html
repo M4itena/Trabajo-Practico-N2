@@ -8,6 +8,7 @@
     <title>Contactanos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
     <link href="css/estilos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,156 +25,27 @@
         <!--HEADER Y NAV-->
 
         <header class="encabezado">
-                <h1>Mundo Livie</h1>
-                <p>¡Contáctanos para más información!</p>
-                <nav class="navbar">
+            <h1>Mundo Livie</h1>
+            <button id="botonLateral" type="button">☰ Menú</button>
+            <nav class="navbar">
                 <ul class="nav nav-pills nav-fill w-100" id="navegacionSuperior">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="noticias.html">Noticias y polémicas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="historia.html">Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="estetica.html">Estilo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="prensa.html">Imagen pública</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="proyectos.html">Colaboraciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="discografia.html">Discografía</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="creditos.html">Créditos</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="estetica.html">Estilo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prensa.html">Imagen pública</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="discografia.html">Discografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="creditos.html">Créditos</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- NAVEGADOR LATERAL -->
-
-        <button id="botonLateral" type="button">☰ Menú</button>
-        <div id="distribucionPagina">
-            <aside id="panelLateral">
-                <nav>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="index.html">Inicio</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="index.html#quienesSomos">¿Quiénes Somos?</a></li>
-                            <li><a href="index.html#membresia">Membresía</a></li>
-                            <li><a href="index.html#oliviaRodrigo">Olivia Rodrigo</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="noticias.html">Noticias y polémicas</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="noticias.html#ultimoMomento">¡Último momento!</a></li>
-                            <li><a href="noticias.html#noticiaUno">Noticia 1</a></li>
-                            <li><a href="noticias.html#noticiaDos">Noticia 2</a></li>
-                            <li><a href="noticias.html#noticiaTres">Noticia 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="historia.html">Historia</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="historia.html#quienEsOlivia">¿Quién es Olivia Rodrigo?</a></li>
-                            <li><a href="historia.html#historiaTituloUno">Titulo 1</a></li>
-                            <li><a href="historia.html#historiaTituloDos">Titulo 2</a></li>
-                            <li><a href="historia.html#historiaTituloTres">Titulo 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="estetica.html">Estilo</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="estetica.html#estiloIconico">Su estilo icónico</a></li>
-                            <li><a href="estetica.html#estiloTituloUno">Titulo 1</a></li>
-                            <li><a href="estetica.html#estiloTituloDos">Titulo 2</a></li>
-                            <li><a href="estetica.html#estiloTituloTres">Titulo 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="prensa.html">Imagen pública</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="prensa.html#representacionGeneracion">La representación de una generación</a>
-                            </li>
-                            <li><a href="prensa.html#prensaTituloUno">Titulo 1</a></li>
-                            <li><a href="prensa.html#prensaTituloDos">Titulo 2</a></li>
-                            <li><a href="prensa.html#prensaTituloTres">Titulo 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="proyectos.html">Colaboraciones</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="proyectos.html#dondeDejoHuella">Donde dejó su huella</a></li>
-                            <li><a href="proyectos.html#proyectoTituloUno">Titulo 1</a></li>
-                            <li><a href="proyectos.html#proyectoTituloDos">Titulo 2</a></li>
-                            <li><a href="proyectos.html#proyectoTituloTres">Titulo 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="discografia.html">Discografía</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="discografia.html#discografia">Discografía</a></li>
-                            <li><a href="discografia.html#discografiaTituloUno">Titulo 1</a></li>
-                            <li><a href="discografia.html#discografiaTituloDos">Titulo 2</a></li>
-                            <li><a href="discografia.html#discografiaTituloTres">Titulo 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="contacto.html">Contacto</a>
-                            <button class="botonSecciones" type="button">Mostrar secciones</button>
-                        </div>
-                        <ul class="listaSecciones">
-                            <li><a href="contacto.html#contactoIntroduccion">¿Querés estar al día con nuestras
-                                    publicaciones?</a></li>
-                            <li><a href="contacto.html#ofertaMembresia">Qué ofrece nuestra membresía?</a></li>
-                            <li><a href="contacto.html#suscripcionNewsletter">¿Te interesa? Suscribite al newsletter</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grupoPagina">
-                        <div class="tituloPagina">
-                            <a href="creditos.html">Créditos</a>
-                        </div>
-                    </div>
-                </nav>
-            </aside>
-
         <!--MAIN-->
 
         <main class="contenidoPrincipal">
-            <h2 id="contactoIntroduccion">¿Querés estar al día con nuestras publicaciones? Suscribite a nuestro newsletter y no te pierdas nada.
+            <h2>¿Querés estar al día con nuestras publicaciones? Suscribite a nuestro newsletter y no te pierdas nada.
             </h2>
             <p>Unite a los más de 5,000 miembros que ya están al tanto de las últimas novedades!</p>
 
@@ -181,7 +53,7 @@
 
             <section>
                 <article>
-                    <h1 id="ofertaMembresia">Qué ofrece nuestra membresía?</h1>
+                    <h1>Qué ofrece nuestra membresía?</h1>
                     <p>Ofrecemos acceso anticipado a nuevos lanzamientos y beneficios especiales para nuestros miembros:
                     </p>
                     <p>Podrás elegir que tipo de contenido deseas recibir a tu correo electrónico.</p>
@@ -191,13 +63,13 @@
 
             <section>
                 <article>
-                    <h1 id="suscripcionNewsletter">¿Te interesa? Suscribite al newsletter</h1>
+                    <h1>¿Te interesa? Suscribite al newsletter</h1>
                     <p>Dejanos tus datos y elegí qué novedades querés recibir. Podés darte de baja cuando quieras.</p>
                     <form action="#" method="post">
                         <fieldset>
                             <legend>Tus datos</legend>
                             <label for="nombre">Nombre (opcional)</label>
-                            <input type="text" id="nombre" name="nombre" placehoer="escribe tu nombre">
+                            <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre">
 
                             <label for="email">Correo electrónico</label>
                             <input type="email" id="email" name="email" placeholder="tuNombre@ejemplo.com" required>
@@ -226,26 +98,16 @@
             <!--FOOTER-->
 
             <footer class="piePagina">
-                <address>
-                    <p>Mail: <a href="mailto:#">mundoLivie@gmail.com</a></p>
-                    <p>Tel: <a href="tel:#">+54 11 1234-5678</a></p>
-                </address>
 
                 <div class="redesSociales">
-                    <p class="miniTiulo">Seguinos en nuestras redes!</p>
-                    <ul>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">YouTube</a></li>
-                    </ul>
+                    <i class="bi bi-twitter-x"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-youtube"></i>
+                    <i class="bi bi-spotify"></i>
                 </div>
-                <div class="aclaracion">
-                    <p>Aclaración: La información presentada en este sitio es solo para fines educativos. Todos los
-                        derechos de imagen y contenido pertenecen a sus respectivos autores. Cualquier simulitud con la
-                        realidad es pura coincidencia.
-                        Los enlaces proporcionados son solo para los fines ya mencionados y no
-                        representan ninguna entidad real u oficial.</p>
-                </div>
+                <address>
+                    <p>Mail: <a href="mailto:mundoLivie@gmail.com">mundoLivie@gmail.com</a></p>
+                </address>
             </footer>
         </main>
         </div>

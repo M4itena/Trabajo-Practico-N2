@@ -26,8 +26,9 @@ body {
 
 .encabezado {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .encabezado h1 {
@@ -62,11 +63,14 @@ body {
 }
 
 .piePagina .redesSociales {
-  gap: 15px;
   height: 550%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.piePagina .redesSociales i {
+  margin-left: 0.75rem;
 }
 
 .piePagina .redesSociales ul {
@@ -88,6 +92,16 @@ body {
 
 .contenidoPrincipal section {
   margin-top: 1rem;
+}
+
+#membresia a {
+  text-decoration: none;
+  color: #491E70;
+}
+
+#membresia a:hover {
+  color: #b4208f;
+  text-decoration: underline;
 }
 
 /* BOTONES MAIN */
@@ -112,12 +126,20 @@ main button:hover {
   color: #F6F1E9;
 }
 
+main #botonVerMas a:hover {
+  margin-bottom: 1rem;
+}
+
 /* NAVEGADOR */
 
 .navbar {
   padding: 0.5rem;
   background-color: #F6F1E9;
   border-radius: 2rem;
+}
+
+.encabezado .navbar {
+  width: 100%;
 }
 
 .nav-pills .nav-link {
@@ -134,100 +156,52 @@ main button:hover {
   background-color: #491E70;
 }
 
-/* PANEL LATERAL */
+/* NAVEGACIÓN RESPONSIVA */
 
-#botonLateral,
-#panelLateral .botonSecciones {
+#panelLateral,
+#distribucionPagina aside {
+  display: none;
+}
+
+#distribucionPagina {
+  display: block;
+  width: 100%;
+}
+
+#distribucionPagina main {
+  width: 100%;
+}
+
+#botonLateral {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.75rem;
   padding: 0.25rem 0.5rem;
   border: 0.25rem solid #491E70;
   border-radius: 1rem;
   background-color: #491E70;
   color: #F6F1E9;
   font-size: 0.8rem;
-  cursor: pointer;
 }
 
-#botonLateral:hover,
-#panelLateral .botonSecciones:hover {
+#botonLateral:hover {
   background-color: #8F69D6;
 }
 
-#botonLateral {
-  margin-top: 1rem;
-}
-
-#distribucionPagina {
-  display: flex;
-  flex-direction: column;
-}
-
-/* LÍNEA */
-
-#panelLateral {
+#navegacionSuperior {
   display: none;
-  box-sizing: border-box;
   width: 100%;
-  padding: 1rem;
-  border-bottom: 0.06rem solid #8F69D6;
-  background-color: #F6F1E9;
-  color: #491E70;
+  min-width: 0;
 }
 
-/* LAYOUT DEL PANEL */
-
-#distribucionPagina.panelAbierto #panelLateral {
+#navegacionSuperior.menuAbierto {
   display: block;
 }
-
-#distribucionPagina main {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-#distribucionPagina.panelAbierto main {
-  width: 100%;
-  padding-left: 0;
-}
-
-#panelLateral nav ul {
-  padding-left: 1.25rem;
-}
-
-#panelLateral a {
-  color: #8F69D6;
-}
-
-#panelLateral a:hover {
-  color: #db10d1;
-}
-
-.tituloPagina {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.grupoPagina+.grupoPagina {
-  margin-top: 0.75rem;
-}
-
-.listaSecciones {
-  display: none;
-}
-
-.listaSecciones.seccionesAbiertas {
-  display: block;
-}
-
-/* CONTROL DE LAYOUT PARA OTROS DISPOSITIVOS */
-
-/* NAVEGADORES */
 
 header .navbar,
 #navegacionSuperior {
   background-color: #F6F1E9;
-  background-image: none;
-  flex-direction: column;
 }
 
 #navegacionSuperior .nav-item,
@@ -235,29 +209,15 @@ header .navbar,
   width: 100%;
 }
 
-@media (min-width: 48rem) {
-  #distribucionPagina.panelAbierto {
-    flex-direction: row;
+@media (min-width: 60rem) {
+  #botonLateral {
+    display: none;
   }
 
-  #distribucionPagina.panelAbierto #panelLateral {
-    width: 32%;
-  }
-
-  #distribucionPagina.panelAbierto main {
-    width: 68%;
-    padding-left: 1rem;
-  }
-
-  #distribucionPagina.panelAbierto #panelLateral {
-    border-right: 0.06rem solid #8F69D6;
-    border-bottom: 0;
-  }
-}
-
-@media (min-width: 62rem) {
-  #navegacionSuperior {
-    flex-direction: row;
+  #navegacionSuperior,
+  #navegacionSuperior.menuAbierto {
+    display: block;
+    text-align: center;
   }
 
   #navegacionSuperior .nav-item,
@@ -265,12 +225,7 @@ header .navbar,
     width: auto;
   }
 
-  #distribucionPagina.panelAbierto #panelLateral {
-    width: 25%;
-  }
-
-  #distribucionPagina.panelAbierto main {
-    width: 75%;
-    padding-left: 1.5rem;
+  #navegacionSuperior .nav-item {
+    display: inline-block;
   }
 }
