@@ -81,6 +81,13 @@ body {
   width: 100%;
 }
 
+/* IMAGENES */
+
+.imagenIcon {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
 /* TEXTO */
 
 .contenidoPrincipal {
