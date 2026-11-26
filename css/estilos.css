@@ -35,6 +35,10 @@ body {
   font-size: 3rem;
 }
 
+.columnaIdentidad {
+  width: 100%;
+}
+
 .piePagina {
   margin-top: 1rem;
   padding: 2rem;
@@ -200,7 +204,7 @@ main button.botonEstrella {
 /* NAVEGADOR */
 
 .navbar {
-  padding: 0.5rem;
+  padding: 0.75rem 1rem;
   background-color: #F6F1E9;
   border-radius: 2rem;
 }
@@ -209,16 +213,17 @@ main button.botonEstrella {
   width: 100%;
 }
 
-.nav-pills .nav-link {
+#navegacionSuperior .nav-link {
   color: #8F69D6;
+  font-size: 1.1rem;
 }
 
-.nav-pills .nav-link:hover {
+#navegacionSuperior .nav-link:hover {
   color: #db10d1;
-
+  background-color: #491E70;
 }
 
-.nav-pills .nav-link.active {
+#navegacionSuperior .nav-link.active {
   color: #F6F1E9;
   background-color: #491E70;
 }
@@ -259,11 +264,15 @@ main button.botonEstrella {
 #navegacionSuperior {
   display: none;
   width: 100%;
-  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 #navegacionSuperior.menuAbierto {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 header .navbar,
@@ -271,9 +280,39 @@ header .navbar,
   background-color: #F6F1E9;
 }
 
-#navegacionSuperior .nav-item,
 #navegacionSuperior .nav-link {
-  width: 100%;
+  display: inline-block;
+  width: auto;
+}
+
+.grupoNav {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-top: 0.25rem solid #d8cde8;
+}
+
+.tituloGrupo {
+  display: block;
+  color: #491E70;
+  font-size: 1.1rem;
+}
+
+.grupoImpacto {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 0.25rem solid #d8cde8;
+}
+
+.enlacesGrupo {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.enlacesGrupo li {
+  display: block;
+  margin-bottom: 0.25rem;
 }
 
 @media (min-width: 48rem) {
@@ -284,22 +323,59 @@ header .navbar,
 }
 
 @media (min-width: 60rem) {
+  .encabezado {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .columnaIdentidad {
+    width: 35%;
+  }
+
+  .columnaIdentidad h1 {
+    margin: 0;
+    text-align: left;
+  }
+
+  .columnaIdentidad .favoritos {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  #navegacionSuperior .nav-link,
+  .tituloGrupo {
+    font-size: 1.2rem;
+  }
+
+  .encabezado .navbar {
+    width: 58%;
+    margin-left: auto;
+  }
+
   #botonLateral {
     display: none;
   }
 
   #navegacionSuperior,
   #navegacionSuperior.menuAbierto {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    text-align: left;
+  }
+
+  .grupoNav {
+    padding: 0.25rem 0.5rem;
+    border-top: 0.25rem solid #d8cde8;
+    border-left: 0;
+  }
+
+  .enlacesGrupo {
     display: block;
-    text-align: center;
-  }
-
-  #navegacionSuperior .nav-item,
-  #navegacionSuperior .nav-link {
-    width: auto;
-  }
-
-  #navegacionSuperior .nav-item {
-    display: inline-block;
   }
 }
