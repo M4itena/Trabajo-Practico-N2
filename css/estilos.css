@@ -14,6 +14,102 @@ body {
   color: blueviolet;
 }
 
+/* TEMAS PERSONALIZADOS */
+/* TEMA SOUR */
+.temaSour #contenedor,
+.temaSour #listaFavoritos,
+.temaSour .favoritos,
+.temaSour .contenidoPrincipal {
+  background-color: #a385cb;
+  color: #141011;
+}
+
+.temaSour .encabezado,
+.temaSour .encabezado .columna,
+.temaSour .piePagina {
+  background-color: #f1e5ef;
+  color: #003a95;
+  border-color: #003a95;
+}
+
+.temaSour #listaFavoritos .botonQuitarFavorito,
+.temaSour .botonEstrella {
+  background-color: #e670a4;
+  color: #f1c967;
+  border-color: #6e2f76;
+}
+
+.temaSour .botonEstrella:hover,
+.temaSour #listaFavoritos .botonQuitarFavorito:hover {
+  background-color: #f1c967;
+  color: #141011;
+  border-color: #a7811a;
+}
+
+.temaSour .navbar #navegador .nav-item {
+  background-color: #f1e5ef;
+  color: #141011;
+  border-color: #6e2f76;
+}
+
+/* TEMA GUTS */
+.temaGuts #contenedor,
+.temaGuts #listaFavoritos,
+.temaGuts .favoritos,
+.temaGuts .contenidoPrincipal {
+  background-color: #4c4781;
+  color: #e7f0f2;
+}
+
+.temaGuts .encabezado,
+.temaGuts .encabezado .columna,
+.temaGuts .piePagina {
+  background-color: #16184b;
+  color: #0c0730;
+  border-color: #59548e;
+}
+
+.temaGuts .piePagina,
+.temaGuts .piePagina p,
+.temaGuts .piePagina address a,
+.temaGuts .piePagina .redesSociales a {
+  color: #e7f0f2;
+}
+
+.temaGuts #listaFavoritos .botonQuitarFavorito,
+.temaGuts .botonEstrella {
+  background-color: #940f26;
+  color: #f1c967;
+  border-color: #36070b;
+}
+
+.temaGuts .botonEstrella:hover,
+.temaGuts #listaFavoritos .botonQuitarFavorito:hover {
+  background-color: #f1c967;
+  color: #141011;
+  border-color: #a7811a;
+}
+
+.temaGuts .navbar #navegador .nav-item {
+  background-color: #f1e5ef;
+  color: #141011;
+  border-color: #59548e;
+}
+
+.temaGuts .navbar #navegador .nav-link {
+  background-color: #f1e5ef;
+  color: #141011;
+}
+
+.temaGuts .navbar #navegador .nav-link:hover,
+.temaGuts .navbar #navegador .nav-link.active {
+  background-color: #1f1547;
+  color: #f1e5ef;
+}
+
+/* TEMA INLOVE */
+
+
 /* ENCABEZADO Y PIE DE PÁGINA */
 
 .encabezado,
@@ -35,7 +131,7 @@ body {
   font-size: 3rem;
 }
 
-.columnaIdentidad {
+.columna {
   width: 100%;
 }
 
@@ -198,13 +294,13 @@ main button.botonEstrella {
   height: 2.75rem;
   padding: 0;
   border-radius: 50%;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 /* NAVEGADOR */
 
 .navbar {
-  padding: 0.75rem 1rem;
+  padding: 1rem;
   background-color: #F6F1E9;
   border-radius: 2rem;
 }
@@ -213,17 +309,18 @@ main button.botonEstrella {
   width: 100%;
 }
 
-#navegacionSuperior .nav-link {
+#navegador .nav-link {
   color: #8F69D6;
   font-size: 1.1rem;
+  padding: 0.5rem 0.5rem;
 }
 
-#navegacionSuperior .nav-link:hover {
+#navegador .nav-link:hover {
   color: #db10d1;
   background-color: #491E70;
 }
 
-#navegacionSuperior .nav-link.active {
+#navegador .nav-link.active {
   color: #F6F1E9;
   background-color: #491E70;
 }
@@ -261,7 +358,7 @@ main button.botonEstrella {
   background-color: #8F69D6;
 }
 
-#navegacionSuperior {
+#navegador {
   display: none;
   width: 100%;
   margin: 0;
@@ -269,18 +366,18 @@ main button.botonEstrella {
   list-style: none;
 }
 
-#navegacionSuperior.menuAbierto {
+#navegador.menuAbierto {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
 header .navbar,
-#navegacionSuperior {
+#navegador {
   background-color: #F6F1E9;
 }
 
-#navegacionSuperior .nav-link {
+#navegador .nav-link {
   display: inline-block;
   width: auto;
 }
@@ -315,6 +412,8 @@ header .navbar,
   margin-bottom: 0.25rem;
 }
 
+/* DISEÑO RESPONSIVO */
+
 @media (min-width: 48rem) {
   #listaFavoritos {
     flex-direction: row;
@@ -331,21 +430,21 @@ header .navbar,
     text-align: left;
   }
 
-  .columnaIdentidad {
+  .columna {
     width: 35%;
   }
 
-  .columnaIdentidad h1 {
+  .columna h1 {
     margin: 0;
     text-align: left;
   }
 
-  .columnaIdentidad .favoritos {
+  .columna .favoritos {
     width: 100%;
     margin: 1rem;
   }
 
-  #navegacionSuperior .nav-link,
+  #navegador .nav-link,
   .tituloGrupo {
     font-size: 1.2rem;
   }
@@ -359,8 +458,8 @@ header .navbar,
     display: none;
   }
 
-  #navegacionSuperior,
-  #navegacionSuperior.menuAbierto {
+  #navegador,
+  #navegador.menuAbierto {
     display: flex;
     flex-direction: column;
     align-items: stretch;
