@@ -90,6 +90,18 @@ body {
 
 /* TEXTO */
 
+.tituloMain {
+  font-size: 1.8rem;
+}
+
+.introduccion {
+  text-align: center;
+}
+
+main p {
+  color: #12051f;
+}
+
 .contenidoPrincipal {
   margin-top: 1rem;
   padding: 1rem;
@@ -109,6 +121,46 @@ body {
 #membresia a:hover {
   color: #b4208f;
   text-decoration: underline;
+}
+
+/* FAVORITOS */
+
+.favoritos {
+  margin: 1rem;
+  padding: 1rem;
+  border: 0.2rem solid #491E70;
+  border-radius: 1rem;
+  background-color: #F6F1E9;
+}
+
+.favoritos h2 {
+  font-size: 1.4rem;
+}
+
+#listaFavoritos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+#listaFavoritos a {
+  color: #491E70;
+}
+
+.botonQuitarFavorito {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border: 0.1rem solid #701e5b;
+  border-radius: 0.75rem;
+  background-color: #f3a0ef;
+  color: #12051f;
+}
+
+.botonQuitarFavorito:hover {
+  background-color: #8F69D6;
+  color: #F6F1E9;
 }
 
 /* BOTONES MAIN */
@@ -135,6 +187,14 @@ main button:hover {
 
 main #botonVerMas a:hover {
   margin-bottom: 1rem;
+}
+
+main button.botonEstrella {
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1.4rem;
 }
 
 /* NAVEGADOR */
@@ -214,6 +274,13 @@ header .navbar,
 #navegacionSuperior .nav-item,
 #navegacionSuperior .nav-link {
   width: 100%;
+}
+
+@media (min-width: 48rem) {
+  #listaFavoritos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 60rem) {
