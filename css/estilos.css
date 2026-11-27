@@ -39,14 +39,12 @@ body {
   border-color: #6e2f76;
 }
 
-.temaSour .botonEstrella:hover,
-.temaSour #listaFavoritos .botonQuitarFavorito:hover {
-  background-color: #f1c967;
-  color: #141011;
-  border-color: #a7811a;
+.temaSour .navbar,
+.temaSour .navbar #navegador {
+  background-color: #f1e5ef;
 }
 
-.temaSour .navbar #navegador .nav-item {
+.temaSour .navbar #navegador li {
   background-color: #f1e5ef;
   color: #141011;
   border-color: #6e2f76;
@@ -79,18 +77,15 @@ body {
 .temaGuts #listaFavoritos .botonQuitarFavorito,
 .temaGuts .botonEstrella {
   background-color: #940f26;
-  color: #f1c967;
   border-color: #36070b;
 }
 
-.temaGuts .botonEstrella:hover,
-.temaGuts #listaFavoritos .botonQuitarFavorito:hover {
-  background-color: #f1c967;
-  color: #141011;
-  border-color: #a7811a;
+.temaGuts .navbar,
+.temaGuts .navbar #navegador {
+  background-color: #f1e5ef;
 }
 
-.temaGuts .navbar #navegador .nav-item {
+.temaGuts .navbar #navegador li {
   background-color: #f1e5ef;
   color: #141011;
   border-color: #59548e;
@@ -108,7 +103,67 @@ body {
 }
 
 /* TEMA INLOVE */
+.temaInlove #contenedor,
+.temaInlove #listaFavoritos,
+.temaInlove .favoritos,
+.temaInlove .contenidoPrincipal {
+  background-color: #a2cbd8;
+  color: #203461;
+}
 
+.temaInlove .encabezado,
+.temaInlove .encabezado .columna,
+.temaInlove .piePagina {
+  background-color: #f3e9dd;
+  color: #4c7f99;
+  border-color: #f69d8f;
+}
+
+.temaInlove .piePagina,
+.temaInlove .piePagina p,
+.temaInlove .piePagina address a,
+.temaInlove .piePagina .redesSociales a {
+  color: #203461;
+}
+
+.temaInlove .piePagina address a:hover {
+  color: #87321e;
+}
+
+.temaInlove #listaFavoritos .botonQuitarFavorito,
+.temaInlove .botonEstrella {
+  background-color: #fbb9a9;
+  color: #1d1512;
+  border-color: #87321e;
+}
+
+.temaInlove .botonEstrella:hover,
+.temaInlove #listaFavoritos .botonQuitarFavorito:hover {
+  background-color: #f1c967;
+  color: #1d1512;
+  border-color: #a7811a;
+}
+
+.temaInlove .navbar,
+.temaInlove .navbar #navegador {
+  background-color: #a2cbd8;
+}
+
+.temaInlove .navbar #navegador li {
+  background-color: #a2cbd8;
+  color: #1d1512;
+  border-color: #4c7f99;
+}
+
+.temaInlove .navbar #navegador .nav-link {
+  color: #1d1512;
+}
+
+.temaInlove .navbar #navegador .nav-link:hover,
+.temaInlove .navbar #navegador .nav-link.active {
+  background-color: #fbb9a9;
+  color: #87321e;
+}
 
 /* ENCABEZADO Y PIE DE PÁGINA */
 
@@ -138,6 +193,7 @@ body {
 .piePagina {
   margin-top: 1rem;
   padding: 2rem;
+  font-size: 1.2rem;
 }
 
 .piePagina address {
@@ -223,6 +279,63 @@ main p {
   text-decoration: underline;
 }
 
+/* FORMULARIO */
+
+.formulario {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(223, 206, 245, 0.568);
+  border-color: #4c4781;
+  border-radius: 1rem;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario form fieldset {
+  width: 100%;
+}
+
+.formulario form .separadorFieldset {
+  padding-top: 1rem;
+  border-top: 0.1rem solid #4c4781;
+}
+
+#nombre,
+#email {
+  display: block;
+  width: 100%;
+  margin: 0.3rem 0 1rem;
+}
+
+.opcionFormulario {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.accionesFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.accionesFormulario button {
+  width: 100%;
+  max-width: 16rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
 /* FAVORITOS */
 
 .favoritos {
@@ -295,6 +408,14 @@ main button.botonEstrella {
   padding: 0;
   border-radius: 50%;
   font-size: 1.5rem;
+  background-color: #f1c967;
+  color: #141011;
+  border-color: #a7811a;
+}
+
+main button.botonEstrella:hover {
+  background-color: rgb(250, 250, 243);
+  border-color: rgb(202, 178, 72);
 }
 
 /* NAVEGADOR */
@@ -476,5 +597,36 @@ header .navbar,
 
   .enlacesGrupo {
     display: block;
+  }
+
+  .formulario form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .formulario form fieldset {
+    width: 33%;
+    min-width: 0;
+    padding: 0 1rem;
+  }
+
+  .formulario form .separadorFieldset {
+    padding-top: 0;
+    border-top: 0;
+    border-left: 0.1rem solid #4c4781;
+  }
+
+  .accionesFormulario {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .accionesFormulario button {
+    width: auto;
+    min-width: 10rem;
   }
 }
