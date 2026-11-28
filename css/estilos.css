@@ -34,8 +34,8 @@ body {
 
 .temaSour #listaFavoritos .botonQuitarFavorito,
 .temaSour .botonEstrella {
-  background-color: #e670a4;
-  color: #f1c967;
+  background-color: #ffffff;
+  color: #6e2f76;
   border-color: #6e2f76;
 }
 
@@ -48,6 +48,11 @@ body {
   background-color: #f1e5ef;
   color: #141011;
   border-color: #6e2f76;
+}
+
+.temaSour h2.introduccion {
+  color: #141011;
+  text-shadow: none;
 }
 
 /* TEMA GUTS */
@@ -100,6 +105,11 @@ body {
 .temaGuts .navbar #navegador .nav-link.active {
   background-color: #1f1547;
   color: #f1e5ef;
+}
+
+.temaGuts h2.introduccion {
+  color: #141011;
+  text-shadow: none;
 }
 
 /* TEMA INLOVE */
@@ -163,6 +173,11 @@ body {
 .temaInlove .navbar #navegador .nav-link.active {
   background-color: #fbb9a9;
   color: #87321e;
+}
+
+.temaInlove h2.introduccion {
+  color: #141011;
+  text-shadow: none;
 }
 
 /* ENCABEZADO Y PIE DE PÁGINA */
@@ -244,14 +259,59 @@ body {
   border-radius: 50%;
 }
 
+.fotoarticulo {
+  margin: 0.75rem auto 1rem;
+  text-align: center;
+}
+
+.fotoarticulo img {
+  display: block;
+  max-width: 100%;
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
 /* TEXTO */
 
 .tituloMain {
-  font-size: 1.8rem;
+  font-family: "Rokkitt", Georgia, serif;
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.075rem;
+  text-align: center;
+
+  display: table;
+  margin: 1.75rem auto 1.1rem;
+  padding: 0.35rem 1.15rem;
+  background-color: #f1e5ef;
+  color: #491E70;
+  border: 0.175rem solid #491E70;
+  border-radius: 0.75rem;
+  box-shadow: 0.275rem 0.275rem 0 #491E70;
 }
 
-.introduccion {
+h2.introduccion {
+  font-family: "Rokkitt", Georgia, serif;
+  font-size: 2.6rem;
+  font-weight: 800;
   text-align: center;
+  line-height: 1.1;
+  margin: 1.5rem 0 0.5rem;
+  letter-spacing: -0.02rem;
+  color: #141011;
+  text-shadow: none;
+}
+
+p.introduccion {
+  font-family: "Courier Prime", monospace;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0.85;
 }
 
 main p {
@@ -367,7 +427,7 @@ main p {
   padding: 0.3rem 0.6rem;
   border: 0.1rem solid #701e5b;
   border-radius: 0.75rem;
-  background-color: #f3a0ef;
+  background-color: #ffffff;
   color: #12051f;
 }
 
@@ -408,9 +468,9 @@ main button.botonEstrella {
   padding: 0;
   border-radius: 50%;
   font-size: 1.5rem;
-  background-color: #f1c967;
-  color: #141011;
-  border-color: #a7811a;
+  background-color: #ffffff;
+  color: #6e2f76;
+  border-color: #6e2f76;
 }
 
 main button.botonEstrella:hover {
