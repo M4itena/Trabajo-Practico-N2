@@ -14,6 +14,157 @@ body {
   color: blueviolet;
 }
 
+/* TEMAS PERSONALIZADOS */
+/* TEMA SOUR */
+.temaSour #contenedor,
+.temaSour #listaFavoritos,
+.temaSour .favoritos,
+.temaSour .contenidoPrincipal {
+  background-color: #a385cb;
+  color: #141011;
+}
+
+.temaSour .encabezado,
+.temaSour .encabezado .columna,
+.temaSour .piePagina {
+  background-color: #f1e5ef;
+  color: #003a95;
+  border-color: #003a95;
+}
+
+.temaSour #listaFavoritos .botonQuitarFavorito,
+.temaSour .botonEstrella {
+  background-color: #e670a4;
+  color: #f1c967;
+  border-color: #6e2f76;
+}
+
+.temaSour .navbar,
+.temaSour .navbar #navegador {
+  background-color: #f1e5ef;
+}
+
+.temaSour .navbar #navegador li {
+  background-color: #f1e5ef;
+  color: #141011;
+  border-color: #6e2f76;
+}
+
+/* TEMA GUTS */
+.temaGuts #contenedor,
+.temaGuts #listaFavoritos,
+.temaGuts .favoritos,
+.temaGuts .contenidoPrincipal {
+  background-color: #4c4781;
+  color: #e7f0f2;
+}
+
+.temaGuts .encabezado,
+.temaGuts .encabezado .columna,
+.temaGuts .piePagina {
+  background-color: #16184b;
+  color: #0c0730;
+  border-color: #59548e;
+}
+
+.temaGuts .piePagina,
+.temaGuts .piePagina p,
+.temaGuts .piePagina address a,
+.temaGuts .piePagina .redesSociales a {
+  color: #e7f0f2;
+}
+
+.temaGuts #listaFavoritos .botonQuitarFavorito,
+.temaGuts .botonEstrella {
+  background-color: #940f26;
+  border-color: #36070b;
+}
+
+.temaGuts .navbar,
+.temaGuts .navbar #navegador {
+  background-color: #f1e5ef;
+}
+
+.temaGuts .navbar #navegador li {
+  background-color: #f1e5ef;
+  color: #141011;
+  border-color: #59548e;
+}
+
+.temaGuts .navbar #navegador .nav-link {
+  background-color: #f1e5ef;
+  color: #141011;
+}
+
+.temaGuts .navbar #navegador .nav-link:hover,
+.temaGuts .navbar #navegador .nav-link.active {
+  background-color: #1f1547;
+  color: #f1e5ef;
+}
+
+/* TEMA INLOVE */
+.temaInlove #contenedor,
+.temaInlove #listaFavoritos,
+.temaInlove .favoritos,
+.temaInlove .contenidoPrincipal {
+  background-color: #a2cbd8;
+  color: #203461;
+}
+
+.temaInlove .encabezado,
+.temaInlove .encabezado .columna,
+.temaInlove .piePagina {
+  background-color: #f3e9dd;
+  color: #4c7f99;
+  border-color: #f69d8f;
+}
+
+.temaInlove .piePagina,
+.temaInlove .piePagina p,
+.temaInlove .piePagina address a,
+.temaInlove .piePagina .redesSociales a {
+  color: #203461;
+}
+
+.temaInlove .piePagina address a:hover {
+  color: #87321e;
+}
+
+.temaInlove #listaFavoritos .botonQuitarFavorito,
+.temaInlove .botonEstrella {
+  background-color: #fbb9a9;
+  color: #1d1512;
+  border-color: #87321e;
+}
+
+.temaInlove .botonEstrella:hover,
+.temaInlove #listaFavoritos .botonQuitarFavorito:hover {
+  background-color: #f1c967;
+  color: #1d1512;
+  border-color: #a7811a;
+}
+
+.temaInlove .navbar,
+.temaInlove .navbar #navegador {
+  background-color: #a2cbd8;
+}
+
+.temaInlove .navbar #navegador li {
+  background-color: #a2cbd8;
+  color: #1d1512;
+  border-color: #4c7f99;
+}
+
+.temaInlove .navbar #navegador .nav-link {
+  color: #1d1512;
+}
+
+.temaInlove .navbar #navegador .nav-link:hover,
+.temaInlove .navbar #navegador .nav-link.active {
+  background-color: #fbb9a9;
+  color: #87321e;
+}
+
 /* ENCABEZADO Y PIE DE PÁGINA */
 
 .encabezado,
@@ -35,13 +186,14 @@ body {
   font-size: 3rem;
 }
 
-.columnaIdentidad {
+.columna {
   width: 100%;
 }
 
 .piePagina {
   margin-top: 1rem;
   padding: 2rem;
+  font-size: 1.2rem;
 }
 
 .piePagina address {
@@ -127,6 +279,63 @@ main p {
   text-decoration: underline;
 }
 
+/* FORMULARIO */
+
+.formulario {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(223, 206, 245, 0.568);
+  border-color: #4c4781;
+  border-radius: 1rem;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario form fieldset {
+  width: 100%;
+}
+
+.formulario form .separadorFieldset {
+  padding-top: 1rem;
+  border-top: 0.1rem solid #4c4781;
+}
+
+#nombre,
+#email {
+  display: block;
+  width: 100%;
+  margin: 0.3rem 0 1rem;
+}
+
+.opcionFormulario {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.accionesFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.accionesFormulario button {
+  width: 100%;
+  max-width: 16rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
 /* FAVORITOS */
 
 .favoritos {
@@ -198,13 +407,21 @@ main button.botonEstrella {
   height: 2.75rem;
   padding: 0;
   border-radius: 50%;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  background-color: #f1c967;
+  color: #141011;
+  border-color: #a7811a;
+}
+
+main button.botonEstrella:hover {
+  background-color: rgb(250, 250, 243);
+  border-color: rgb(202, 178, 72);
 }
 
 /* NAVEGADOR */
 
 .navbar {
-  padding: 0.75rem 1rem;
+  padding: 1rem;
   background-color: #F6F1E9;
   border-radius: 2rem;
 }
@@ -213,17 +430,18 @@ main button.botonEstrella {
   width: 100%;
 }
 
-#navegacionSuperior .nav-link {
+#navegador .nav-link {
   color: #8F69D6;
   font-size: 1.1rem;
+  padding: 0.5rem 0.5rem;
 }
 
-#navegacionSuperior .nav-link:hover {
+#navegador .nav-link:hover {
   color: #db10d1;
   background-color: #491E70;
 }
 
-#navegacionSuperior .nav-link.active {
+#navegador .nav-link.active {
   color: #F6F1E9;
   background-color: #491E70;
 }
@@ -261,7 +479,7 @@ main button.botonEstrella {
   background-color: #8F69D6;
 }
 
-#navegacionSuperior {
+#navegador {
   display: none;
   width: 100%;
   margin: 0;
@@ -269,18 +487,18 @@ main button.botonEstrella {
   list-style: none;
 }
 
-#navegacionSuperior.menuAbierto {
+#navegador.menuAbierto {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
 header .navbar,
-#navegacionSuperior {
+#navegador {
   background-color: #F6F1E9;
 }
 
-#navegacionSuperior .nav-link {
+#navegador .nav-link {
   display: inline-block;
   width: auto;
 }
@@ -315,6 +533,8 @@ header .navbar,
   margin-bottom: 0.25rem;
 }
 
+/* DISEÑO RESPONSIVO */
+
 @media (min-width: 48rem) {
   #listaFavoritos {
     flex-direction: row;
@@ -331,21 +551,21 @@ header .navbar,
     text-align: left;
   }
 
-  .columnaIdentidad {
+  .columna {
     width: 35%;
   }
 
-  .columnaIdentidad h1 {
+  .columna h1 {
     margin: 0;
     text-align: left;
   }
 
-  .columnaIdentidad .favoritos {
+  .columna .favoritos {
     width: 100%;
     margin: 1rem;
   }
 
-  #navegacionSuperior .nav-link,
+  #navegador .nav-link,
   .tituloGrupo {
     font-size: 1.2rem;
   }
@@ -359,8 +579,8 @@ header .navbar,
     display: none;
   }
 
-  #navegacionSuperior,
-  #navegacionSuperior.menuAbierto {
+  #navegador,
+  #navegador.menuAbierto {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -377,5 +597,36 @@ header .navbar,
 
   .enlacesGrupo {
     display: block;
+  }
+
+  .formulario form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .formulario form fieldset {
+    width: 33%;
+    min-width: 0;
+    padding: 0 1rem;
+  }
+
+  .formulario form .separadorFieldset {
+    padding-top: 0;
+    border-top: 0;
+    border-left: 0.1rem solid #4c4781;
+  }
+
+  .accionesFormulario {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .accionesFormulario button {
+    width: auto;
+    min-width: 10rem;
   }
 }

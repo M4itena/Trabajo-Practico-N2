@@ -25,46 +25,55 @@
         <!--HEADER Y NAV-->
 
         <header class="encabezado">
-            <div class="columnaIdentidad">
+            <div class="columna">
                 <h1>Mundo Livie</h1>
                 <section class="favoritos">
                     <h2>Mis favoritos</h2>
                     <ul id="listaFavoritos">
                         <li hidden>
                             <a href="index.html">Inicio</a>
-                            <button class="botonQuitarFavorito" type="button" title="Quitar de favoritos">Quitar</button>
+                            <button class="botonQuitarFavorito" type="button"
+                                title="Quitar de favoritos">Quitar</button>
                         </li>
                         <li hidden>
                             <a href="noticias.html">Noticias</a>
-                            <button class="botonQuitarFavorito" type="button" title="Quitar de favoritos">Quitar</button>
+                            <button class="botonQuitarFavorito" type="button"
+                                title="Quitar de favoritos">Quitar</button>
                         </li>
                         <li hidden>
                             <a href="historia.html">Historia</a>
-                            <button class="botonQuitarFavorito" type="button" title="Quitar de favoritos">Quitar</button>
+                            <button class="botonQuitarFavorito" type="button"
+                                title="Quitar de favoritos">Quitar</button>
                         </li>
                         <li hidden>
                             <a href="estetica.html">Estilo</a>
-                            <button class="botonQuitarFavorito" type="button" title="Quitar de favoritos">Quitar</button>
+                            <button class="botonQuitarFavorito" type="button"
+                                title="Quitar de favoritos">Quitar</button>
                         </li>
                         <li hidden>
                             <a href="prensa.html">Imagen pública</a>
-                            <button class="botonQuitarFavorito" type="button" title="Quitar de favoritos">Quitar</button>
+                            <button class="botonQuitarFavorito" type="button"
+                                title="Quitar de favoritos">Quitar</button>
                         </li>
                         <li hidden>
                             <a href="proyectos.html">Proyectos</a>
-                            <button class="botonQuitarFavorito" type="button" title="Quitar de favoritos">Quitar</button>
+                            <button class="botonQuitarFavorito" type="button"
+                                title="Quitar de favoritos">Quitar</button>
                         </li>
                         <li hidden>
                             <a href="discografia.html">Discografía</a>
-                            <button class="botonQuitarFavorito" type="button" title="Quitar de favoritos">Quitar</button>
+                            <button class="botonQuitarFavorito" type="button"
+                                title="Quitar de favoritos">Quitar</button>
                         </li>
                         <li hidden>
                             <a href="contacto.html">Contacto</a>
-                            <button class="botonQuitarFavorito" type="button" title="Quitar de favoritos">Quitar</button>
+                            <button class="botonQuitarFavorito" type="button"
+                                title="Quitar de favoritos">Quitar</button>
                         </li>
                         <li hidden>
                             <a href="creditos.html">Créditos</a>
-                            <button class="botonQuitarFavorito" type="button" title="Quitar de favoritos">Quitar</button>
+                            <button class="botonQuitarFavorito" type="button"
+                                title="Quitar de favoritos">Quitar</button>
                         </li>
                     </ul>
                     <p id="favoritosVacios">Tu lista de favoritos está vacía!</p>
@@ -72,7 +81,7 @@
             </div>
             <button id="botonLateral" type="button">☰ Menú</button>
             <nav class="navbar">
-                <ul id="navegacionSuperior">
+                <ul id="navegador">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item grupoNav">
                         <span class="tituloGrupo">Conociendo a Olivia</span>
@@ -101,8 +110,6 @@
             </nav>
         </header>
 
-
-
         <!--MAIN-->
 
         <main class="contenidoPrincipal">
@@ -114,7 +121,7 @@
 
             <!--SECCION-->
 
-            <section>
+            <section class="introduccion">
                 <article>
                     <h2>Qué ofrece nuestra membresía?</h2>
                     <p>Ofrecemos acceso anticipado a nuevos lanzamientos y beneficios especiales para nuestros miembros:
@@ -124,38 +131,43 @@
                 </article>
             </section>
 
-            <section>
-                <article>
-                    <h3 class="tituloMain">¿Te interesa? Suscribite a nuestro newsletter</h3>
-                    <p>Dejanos tus datos y elegí qué novedades querés recibir. Podés darte de baja cuando quieras.</p>
-                    <form action="#" method="post">
-                        <fieldset>
-                            <legend>Tus datos</legend>
-                            <label for="nombre">Nombre (opcional)</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre">
+            <!--FORMULARIO-->
 
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" placeholder="tuNombre@ejemplo.com" required>
-                        </fieldset>
-                        <fieldset>
-                            <legend>¿Qué contenido querés recibir?</legend>
+            <section class="formulario">
+                <h3 class="tituloMain">¿Te interesa? Suscribite a nuestro newsletter</h3>
+                <p>Dejanos tus datos y elegí qué novedades querés recibir. Podés darte de baja cuando quieras.</p>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Tus datos</legend>
+                        <label for="nombre">Nombre (opcional)</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre">
+
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tuNombre@ejemplo.com" required>
+                    </fieldset>
+                    <fieldset class="separadorFieldset">
+                        <legend>¿Qué contenido querés recibir?</legend>
+                        <div class="opcionFormulario">
                             <input type="checkbox" id="novedades" name="novedades" value="novedades">
                             <label for="novedades">Novedades y publicaciones</label>
-
+                        </div>
+                        <div class="opcionFormulario">
                             <input type="checkbox" id="lanzamientos" name="lanzamientos" value="lanzamientos">
                             <label for="lanzamientos">Nuevos lanzamientos</label>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Consentimiento</legend>
-                            <p>Al enviar este formulario, acepto recibir novedades y publicaciones de Mundo Livie a mi
-                                correo electrónico. Entiendo que puedo darme de baja en cualquier momento.</p>
-                            <input type="checkbox" id="consentimiento" name="consentimiento" value="acepto" required>
-                            <label for="consentimiento">Acepto recibir novedades por correo electrónico</label>
-                        </fieldset>
+                        </div>
+                    </fieldset>
+                    <fieldset class="separadorFieldset">
+                        <legend>Consentimiento</legend>
+                        <p>Al enviar este formulario, acepto recibir novedades y publicaciones de Mundo Livie a mi
+                            correo electrónico. Entiendo que puedo darme de baja en cualquier momento.</p>
+                        <input type="checkbox" id="consentimiento" name="consentimiento" value="acepto" required>
+                        <label for="consentimiento">Acepto recibir novedades por correo electrónico</label>
+                    </fieldset>
+                    <div class="accionesFormulario">
                         <button type="submit">Suscribirme</button>
-                        <button type="reset">Borrar</button>
-                    </form>
-                </article>
+                        <button type="reset">Reiniciar</button>
+                    </div>
+                </form>
             </section>
 
             <!--FOOTER-->

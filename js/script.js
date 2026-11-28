@@ -2,11 +2,11 @@
 // NAVEGACIÓN RESPONSIVA
 
 const botonLateral = document.querySelector("#botonLateral");
-const navegacionSuperior = document.querySelector("#navegacionSuperior");
+const navegador = document.querySelector("#navegador");
 
-if (botonLateral && navegacionSuperior) {
+if (botonLateral && navegador) {
     botonLateral.addEventListener("click", () => {
-        const menuAbierto = navegacionSuperior.classList.toggle("menuAbierto");
+        const menuAbierto = navegador.classList.toggle("menuAbierto");
         botonLateral.textContent = menuAbierto ? "✕ Cerrar menú" : "☰ Menú";
     });
 }
@@ -14,7 +14,7 @@ if (botonLateral && navegacionSuperior) {
 // FAVORITOS
 
 const enlaceActual = document.querySelector(
-    "#navegacionSuperior .nav-link.active"
+    "#navegador .nav-link.active"
 );
 const listaFavoritos = document.querySelector("#listaFavoritos");
 const mensajeVacio = document.querySelector("#favoritosVacios");
