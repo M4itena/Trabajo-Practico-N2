@@ -260,17 +260,117 @@ body {
 }
 
 .fotoarticulo {
-  margin: 0.75rem auto 1rem;
+  margin: 1.25rem auto;
+  max-width: 38rem;
   text-align: center;
 }
 
 .fotoarticulo img {
   display: block;
+  width: 100%;
   max-width: 100%;
-  width: fit-content;
   height: auto;
   margin: 0 auto;
   border-radius: 1rem;
+}
+
+.bloqueImagenDerecha {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+  width: 100%;
+}
+
+.bloqueImagenDerecha .fotoarticulo {
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bloqueImagenDerecha .fotoarticulo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.bloqueImagenDerecha button {
+  align-self: flex-end;
+}
+
+.bloqueBiografia,
+.bloqueAlbumDerecha {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.fotoCuadrada {
+  width: 100%;
+  max-width: 18rem;
+  aspect-ratio: 1 / 1;
+  margin: 0;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.fotoCuadrada img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.textoBiografia,
+.textoAlbum {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.textoBiografia p,
+.textoAlbum p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.textoAlbum p:last-child {
+  margin-bottom: 0;
+}
+
+.fotoAlbumDerecha {
+  width: 100%;
+  max-width: 22rem;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.fotoAlbumDerecha img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.separadorVioleta {
+  border: 0;
+  border-top: 0.2rem solid #491E70;
+  margin: 1.75rem 0;
+  opacity: 1;
 }
 
 /* TEXTO */
@@ -599,6 +699,23 @@ header .navbar,
   #listaFavoritos {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .bloqueBiografia,
+  .bloqueAlbumDerecha {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .fotoCuadrada {
+    width: 18rem;
+    max-width: 18rem;
+  }
+
+  .fotoAlbumDerecha {
+    width: 21rem;
+    max-width: 21rem;
   }
 }
 
